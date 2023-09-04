@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>로보노드 | RoboNODE</title>
+
+  <!--meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="le=edge">
+
+  <!--bootstrap-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!--css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+
+   <!-- scss -->
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/moblie.css">
+ 
+
+  <!--favicon--->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="apple-touch-icon">
+
+  <!--js-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+
+
+
+<body>
+
+
+  <header >
+
+    <div class="hd_all">
+
+      <hgroup>
+
+        <a href="#home">
+          <h1 class="menu_style">
+            <img src="img/Robo_logo_300_2.png" alt="logo">
+          </h1>
+        </a>
+
+      </hgroup>
+
+
+      <nav class="pc_menu">
+        <ul class="menu_style">
+
+          <li><a href="#home" class="scroll"onClick="return false;">Home</a></li>
+          <li><a href="#about" class="scroll" onClick="return false;">About</a></li>
+          <li><a href="#coin" class="scroll" onClick="return false;">RoboNODE Coin</a></li>
+          <li><a href="#roadmap" class="scroll" onClick="return false;">Roadmap</a></li>
+          <li><a href="#contact" class="scroll" onClick="return false;">Contact</a></li>
+          <li class="lang"><a href="index_eng.html" class="scroll"><div>
+            Kor| <bb> Eng </bb>
+          </div></a></li>
+
+
+        </ul>
+      </nav>
+
+
+     <!--반응형-->
+
+     <div class="m_menu_button">
+
+      <a href="#" class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+
+     <!--반응형 js-->
+     <script type="text/javascript">
+
+      $(function () {
+        $(".menu-trigger").click(function (e) {
+          e.preventDefault();
+          $(this).toggleClass('active-' + 1);
+        });
+      });
+
+    </script>
+
+    <nav class="m_menu">
+      <ul class="menu_style">
+        <li><a href="#home" class="scroll" onClick="return false;">Home</a></li>
+        <li><a href="#about" class="scroll" onClick="return false;">About</a></li>
+        <li><a href="#coin" class="scroll" onClick="return false;">RoboNODE Coin</a></li>
+        <li><a href="#roadmap" class="scroll" onClick="return false;">Roadmap</a></li>
+        <li><a href="#contact" class="scroll" onClick="return false;">Contact</a></li>
+        <li class="lang"><a href="index_eng.html" class="scroll">Eng</a></li>
+      </ul>
+    </nav>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".m_menu_button").click(function () {
+          $(".m_menu").animate({ height: "toggle" }, 250);
+        });
+      });
+
+    </script>
+
+    </div>
+
+  </header>
+
+  <main>
+    <!-- home -->
+    <section id="home">
+      <div class="main_video">
+        <video autoplay muted loop >
+          <source src="vid/home_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap">
+        <div class="home_content container">
+          
+          <div class="home_logo">
+            <img src="img/Robo_logo_300_2.png">
+          </div>
+          
+          <div class="home_txt" >
+            <h1 class="tracking-in-expand"  >RoboNODE 로보노드</h1>
+            
+            <h2>블록체인을 통해 재편되는 로봇 상품 거래 시장, <br>거래의 판도와 지형을 바꿀 플랫폼이 시작 됩니다</h2>
+            
+            <p>
+              위작, 거래의 어려움, 도난, 거래대금 지급에 있어 수 많은 단점을 <br> 가진 로봇 거래시장
+              NFT기술을 통해 새로운 솔루션을 제공합니다
+            </p>
+            <br>
+
+            <div class="home_btn">
+              <button type="button" onclick="location.href='RoboNODE-whitepaper-kor.pdf' " class="custom-btn btn-6"><span></span><span></span><span></span><span></span>Whitepaper</button>
+              <button type="button" onclick="location.href='https://robonode.co/' " class="custom-btn btn-6"><span></span><span></span><span></span><span></span>Wallet</button>
+            </div>
+          </div>
+
+          <div class="af">
+            <span></span>
+          </div>
+ 
+        </div>
+        
+      </div>
+     
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      
+      <article class="about_1">
+        <div class="about_bg_1">
+          <img src="img/ab_600.jpg">
+        </div>
+        <div class="about_text" data-aos="fade-down" data-aos-duration="1000">
+          <h2 class="boxabout" >
+            Intro.
+          </h2>
+          <span></span>
+          <div class="intro1_wrap container">
+            <h4 >로봇 NFT 작품은 로봇 디자인, 인공 지능, 가상 현실 등과 <br>
+              결합된 고유한 디지털 작품으로, 소유권을 증명하고 거래할 <br> 수 있는 디지털 자산으로서 그 투자성과 희소성이 높아 그 관심이<br> 점점 높아지고 있는 분야입니다.
+              로봇 NFT시장의 새로운 지평선을 열어갑니다</h4>
+          </div>
+        </div>
+      </article>
+
+      <article class="about_2">
+        <div class="about_text"  data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+          <h2 class="boxabout">
+            RoboNODE <br>블록체인 프로토콜
+          </h2>
+          <span></span>
+          <h3>플랫폼 구현을 통한 사업의 진행, 블록체인 기술의 장점을 최대한 활용합니다 </h3>
+        </div>
+        <div class="about_de"  data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+          <div class="about_img">
+            <img class="d-pc" src="img/Diagram 1.png">
+            <img class="d-m" src="img/Diagram 1_m.png">
+          </div>
+          <div class="de_text"  data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+            <ul>
+              <li><p>플랫폼을 통해서 개인 창작가들이 로봇 테마의 NFT를 자유롭게 제작 하고 민팅 할 수 있는 기능</p><img src="img/1.png"></li>
+              <li><img src="img/2.jpg"><p>제작 된 NFT작품을 시간과 장소에 제약없이 항상 글로벌 사용자들과 정보의 교류 및 작품거래를 할 수 있는 기능</p></li>
+              <li><p>DAO방식을 통해 인기있는 로봇 NFT 작품의 선정 및 경매를 통해 시장의 요구에 따른 거래가 활성 화 될 수 있도록 하는 기능</p><img src="img/3.png"></li>
+          </ul>
+          </div>
+          
+
+        </div>
+      </article>
+
+      <article class="about_3">
+        <div class="about_bg_3">
+          <img src="img/about_bg_2.jpg">
+        </div>
+        <div class="about_text" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+          <h2 class="boxabout" >
+            RoboNODE 사업참여 가능자 및 각 참여자 혜택
+          </h2>
+          <span></span>
+          <div class="de_text">
+            NFT 제작 창작자 | NFT 작품 거래 개인 및 기관 수집가 | NFT 작품 도매상 (aggregators)
+          </div>
+        </div>
+        <div class="about_de" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+            <img src="img/a_di2.png">
+        </div>
+      </article>
+    </section>
+
+    <!-- coin -->
+    <section id="coin">
+      <article>
+        <div class="coin_text"data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+          <h2> Coin  </h2>
+          <h3 >코인 배분 및 사용 계획 (Budget allocations)</h3>
+        </div>
+        <div class="coin_img" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="1000">
+          <img class="on2" src="img/coin_.png">
+          <img class="on1" src="img/coin-2.png">
+        </div>
+        <div class="coin_box" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="1000">
+          <img src="img/coin-chat.png">
+          <p>Coin name: RoboNODE | Symbol: RBND | Protocol: ERC721 | Total supply: 300,000,000</p>
+        </div>
+      </article>
+      <article class="bg_meve">
+        <div class="div1"></div>
+        <div class="div2"></div>
+      </article>
+    </section>
+
+      <!-- roadmap -->
+    <section id="roadmap">
+      <div class="road_video">
+        <video autoplay muted loop playsinline>
+          <source src="vid/road_bg.mp4" type="video/mp4">
+        </video>
+      </div>
+      <article class="road_text" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="500">
+        <h2 class="boxabout" >
+          Roadmap
+        </h2>
+      </article>
+      <article class="road_de" data-aos="fade-down" data-aos-duration="1000" data-aos-duration="1000">
+        <div class="road_box_left">
+          <img class="road_icon" src="img/road3.png">
+          <div>
+            <h3 class="dat">2023</h3>
+            <ul class="cont">
+              <li> Q2  RoboNODE 설립</li>
+              <li> Q3  국제 로봇 NFT 상품화 트렌드 조사</li>
+              <li> Q4  로봇 NFT web 3.0 지갑 제작 <br> 국제 거래소 1차 상장</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="road_box_right">
+          <img class="road_icon" src="img/road3.png">
+          <div>
+            <h3 class="dat">2024</h3>
+            <ul class="cont">
+              <li> Q1 국제 로봇 NFT 온라인 전시회 참여 </li>
+              <li> Q2 국제 거래소 2차 상장 </li>
+              <li> Q3 비즈니스 플랫폼 세계관 2차 확장 </li>
+              <li> Q4 국제 시장 확대를 위한 추가 <br> NFT거래소 출품 </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="road-png"data-aos="fade-down" data-aos-duration="1000" data-aos-duration="1000">
+        <img class="ro01" src="img/road2.png">
+        <img class="ro02" src="img/road-2.png">
+      </article>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <article class="cont_text">
+        <h2 class="boxabout" data-aos="fade-down" data-aos-duration="1000">
+          Contact
+        </h2>
+        <div class="coin_img">
+          <img class="cn1" src="img/cont_1.png">
+          <img class="cn2" src="img/con2.png">
+        </div>
+      </article>
+      <article class="cont_in">
+        <div class="form_box" data-aos="fade-up" data-aos-duration="1000">
+          <form method="post" onsubmit="return validate();">
+            <input type="text" id="email" placeholder="E-mail" required> >
+            <input type="text" id="text" placeholder="Message" required> >
+            <!-- <input type="submit" id="sub" value="SUBMIT"> -->
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+        </form>
+        </div>
+      </article>
+      <article class="bg_meve">
+        <div class="div1"></div>
+        <div class="div2"></div>
+      </article>
+    </section>
+
+  </main>
+  
+  <footer>
+    <div class="footer_area container">
+
+      <a href="#home">
+        <h1 class="logo_icon">
+          <img src="img/Robo_logo_300_2.png" alt="logo">
+        </h1>
+      </a>
+     
+
+      <ul class="inc">
+        <h4>RoboNODE Ltd.</h4>
+        <!-- <li>운영사 :</li> -->
+        <!-- <li>예금주 : 김성중</li> -->
+        <li>Address : <!-- 서울시 강남구 테헤란로 425 --></li>
+       <!--  <li>wallet : <span onclick="location.href='#' "></span></li> -->
+        <li>고객센터 : <!-- 070-8018-7692 --> <span>(월~금 10am~5pm시 _ 점심12~2pm)</span></li>
+      </ul>
+
+      <div class="white_pp">
+        <h4>Whitepaper</h4>
+        <aside class="but-box">
+          <button type="button" onclick="location.href='RoboNODE-whitepaper-kor.pdf' " target="_blank"><img src="/img/f_w2.png">Kor</button>
+          <button type="button" onclick="location.href='RoboNODE-whitepaper-eng.pdf' "><img src="/img/f_w2.png">Eng</button>
+        </aside>
+      </div>
+
+      <div class="sns">
+        <h4>Community</h4>
+        <button type="button" onclick="location.href='https://t.me/robonode_officail' " target="_blank"><img src="/img/f_t.png"><!-- <i class="xi-telegram"></i> --></button>
+        <button type="button" onclick="location.href='https://open.kakao.com/o/spPKXxrf' "><img src="/img/kakaotalk-logo.png"></button>
+      </div>
+    </div>
+
+    <p class="footer_p">재단은 코인제작 및 플랫폼 운영, 지갑 관리, 거래소 상장 추진 및 관리에 관한 업무만 진행하고 있습니다.</p>
+  </footer>
+
+ <script>
+    AOS.init();
+  </script>
+<script src="js/header.js"></script>
+
+
+</body>
+
+
+</html>

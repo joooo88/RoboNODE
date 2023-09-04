@@ -1,0 +1,1043 @@
+@import "./mixin";
+
+/*데탑 1440px*/
+@include desktop{
+
+    /* main */ 
+    main{
+
+        /* about */
+        #about {
+            .about_1{
+                .about_text{
+                    padding-top: 2rem;
+                    margin-left: 6rem;
+                    span{
+                        width: 11%;
+                    }
+                }
+            }
+            .about_2{
+                .about_text{
+                    padding-top: 2rem;
+                    margin-left: 6rem;
+                    h3{
+                        margin: 70px 0;
+                    }
+                    span{
+                        width: 21%;
+                    }
+                }
+                .about_de{
+                    .de_text{
+                        ul{
+                            gap: 20px;
+                        }
+                        
+                    } 
+                }
+            }
+            .about_3{
+                .about_text{
+                    padding-top: 2rem;
+                    margin-left: 6rem;
+                    span{
+                        width: 56.5%;
+                    }
+                }
+            }
+        }
+
+        /* coin */
+        #coin{
+            article{
+                .coin_text{
+                    h2{
+                        font-size: 50px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        padding-top: 10px;
+                    }
+                }
+                .coin_img{
+                    .on1{
+                        left: 46.5%;
+                    }
+                    padding-bottom: 20px;
+                }
+                .coin_box{
+                    img{
+                        width: 600px;
+                    }
+                }
+            } 
+            .bg_meve{
+                .div1{
+                    transform: translate(-15rem, -23rem);
+                }
+                @keyframes on1 {
+                    50%{transform: translate(-12rem, -23rem);}
+                }
+                .div2{
+                    width: 400px;
+                    height: 400px;
+                    transform: translate(83rem, -68rem);
+                }
+                @keyframes on2 {
+                    50%{transform: translate(85rem, -68rem);}
+                }
+            }
+        }
+
+        /* roadmap */
+        #roadmap{
+            .road_text{
+                padding-top: 6.5rem;
+                h2{
+                    font-size: 50px;
+                }
+            }
+            .road_de{text-align: center;
+                .road_box_left{
+                    &::before,&::after{
+                        display: none;
+                    }
+                    img{
+                        max-width: 90%;
+                    }
+                    div{
+                        line-height: 2;
+                        left: 3rem;
+                        h3{
+                            font-size: 2rem;
+                        }
+                        ul{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+                .road_box_right{
+                    &::before,&::after{
+                        display: none;
+                    }
+                    img{
+                        max-width: 90%;
+                    }
+                    div{
+                        max-width: 76%;
+                        line-height: 1.7;
+                        left: 3rem;
+                        h3{
+                            font-size: 2rem;
+                        }
+                        ul{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+            .road-png{
+                .ro01{
+                    width: 250px;
+                }
+                .ro02{
+                    width: 170px;
+                }
+            } 
+        }
+
+        /* contact */
+        #contact{
+            .cont_text{
+                h2{
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+                .coin_img{
+                    .cn1{
+                        width: 70px;
+                    }
+                    .cn2{
+                        width: 60px;
+                    }
+                }
+            }
+            .bg_meve{
+                .div1{
+                    transform: translate(-15rem, -31rem);
+                }
+                .div2{
+                    transform: translate(85rem, -30rem);
+                }
+            } 
+        } 
+    }
+
+    
+}
+
+/*노트북 1024px*/
+@include laptop{
+    /* header */
+    header{
+        .hd_all{
+            hgroup {
+                width: 30%;
+                a {
+                    h1{
+                        
+                    }
+                }
+            }
+            .pc_menu{
+                width: 70%;
+                .menu_style{
+                    a{
+                        font-size: 1rem;
+                    }
+                } 
+            } 
+        } 
+    }
+
+    main{
+        #home {
+            .home_wrap {
+                .home_content {
+                    max-width: 100%;
+                    .home_logo{
+                        margin-bottom: 15px;
+                    }
+                    .af {
+                        span{
+                            
+                            width: 700px;
+                            height: 700px;
+                        }
+                    }
+                    .home_txt {
+                        h2{
+                            max-width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+        /* about */ 
+        #about{
+            .about_1{
+                .about_text{
+                    padding-top: 1rem;
+                    margin-left: 5rem;
+                    .intro1_wrap{
+                        h4{font-size: 16px;}
+                    } 
+                    span{
+                        width: 17%;
+                    }
+                }
+                .about_bg_1{
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            } 
+            .about_2{
+                .about_text{
+                    padding-top: 3rem;
+                    margin-left: 5rem;
+                    span{
+                        width: 30%;
+                    }
+                    h3{
+                        width: 80%;
+                    }
+                }
+                .about_de{
+                    .de_text{
+                        ul{
+                            width: 90%;
+                            gap: 10px;
+                            li{
+                                gap: 13px;
+                            }
+                        }
+                    }
+                } 
+            }
+            .about_3{
+                .about_text{
+                    padding-top: 3rem;
+                    margin-left: 5rem;
+                    span{
+                        width: 80%;
+                    }
+                    .de_text{
+                        width: 70%;
+                        line-height: 1.5;
+                    }
+                }
+                .about_de {
+                    img{
+                        width: 750px;
+                    }
+                }
+            }
+        } 
+        /* coin */ 
+        #coin {
+            .bg_meve{
+                .div1{
+                    transform: translate(-20rem, -23rem);
+                }
+                @keyframes on1 {
+                    50%{transform: translate(-17rem, -23rem);}
+                }
+                .div2{
+                    transform: translate(58rem, -68rem);
+                }
+                @keyframes on2 {
+                    50%{transform: translate(60rem, -68rem);}
+                }
+            } 
+        }
+        /* roadmap */
+        #roadmap{
+            .road_de{
+                width: 70%;
+                .road_box_left{
+                    div{
+                        left: 3rem;
+                    }
+                }
+                .road_box_right{
+                    div{
+                        top: 1rem;
+                        left: 3rem;
+                    }
+                }
+            }
+            .road-png {
+                .ro02{
+                    width: 140px;
+                }
+            }
+        } 
+        /* contact */
+        #contact{
+            .bg_meve {
+                .div2{
+                    transform: translate(59rem, -30rem);
+                }
+            }
+        } 
+    }
+}
+
+/*패드 991px*/
+@include tablet{
+    main {
+        #about {
+            .about_1 {
+                .about_text {
+                    .intro1_wrap {
+                        h4{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road_de {
+                .road_box_left{
+                    div{
+                        top: 2rem;
+                        width: 80%;
+                        left: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*아이패드 768px*/
+@include itablet{
+    header {
+        .hd_all{
+            padding:  0 3rem;
+        }
+    }
+
+    main{
+        #home{
+            .home_wrap {
+                .home_content {
+                    .home_logo {
+                        img{
+                            width: 130px;
+                        }
+                    }
+                    .home_txt{
+                        width: 80%;
+                        margin: 0 auto;
+                        text-align: center;
+                        h2{
+                            font-size: 20px;
+                        }
+                        .home_btn{
+                            .btn-6{
+                                margin-top: 0;
+                            }
+                        }
+                        p{
+                            max-width: 90%;
+                        } 
+                    }
+                    .af{
+                        span{
+                            width: 560px;
+                            height: 560px;
+                        }
+                    }
+                }
+                
+            }
+        } 
+        #about {
+            .about_1 {
+                height: 50vh;
+                .about_text {
+                    span{
+                        width: 22%;
+                    }
+                    
+                    .intro1_wrap {
+                        h4{
+                            width: 83%;
+                        }
+                    }
+                }
+            }
+            .about_2{
+                .about_text{
+                    span{
+                        width: 41%;
+                    }
+                    h3{
+                        margin: 50px 0;
+                        font-size: 16px;
+                    }
+                }
+                .about_de {
+                    .de_text {
+                        ul {
+                            li {
+                                gap: 20px;
+                                p{
+                                    line-height: 1.2
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about_3{
+                .about_text{
+                    .boxabout{
+                        font-size: 25px;
+                        width: 70%;
+                    }
+                    span{
+                        width: 63%;
+                    }
+                    .de_text{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        #coin {
+            article {
+                .coin_img {
+                    .on1{
+                        left: 44%;
+                    }
+                }
+            }
+            .bg_meve {
+                .div2{
+                    transform: translate(45rem, -68rem);
+                }
+                @keyframes on2 {
+                    50%{transform: translate(47rem, -68rem);}
+                }
+            }
+        }
+        #roadmap{
+            .road_de {
+                width: 80%;
+                .road_box_left {
+                    div{
+                        left: 2rem;
+                        h3{
+                            font-size: 1.5rem;
+                            margin-bottom: 13px;
+                        }
+                        ul{
+                            line-height: 1.5;
+                            padding: 0 23px 0 0;
+                        }
+                    }
+                }
+                .road_box_right {
+                    div{
+                        left: 2rem;
+                        h3{
+                            font-size: 1.3rem;
+                            margin-bottom: 13px;
+                        }
+                        ul{
+                            line-height: 1.4;
+                            padding: 0 30px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            .bg_meve {
+                .div1{
+                    transform: translate(-17rem, -20rem);
+                }
+                .div2{
+                    transform: translate(44rem, -30rem);
+                }
+            }
+        }
+    } 
+}
+/* 모바일 767px*/
+@include mobile{
+    /* header */
+    header{
+        .hd_all{
+            .pc_menu{
+                display: none;
+            }
+            .m_menu_button{
+                display: block;
+            } 
+
+        } 
+    }
+    /* main */
+    main{
+        /* home */
+        #home{
+            .home_wrap {
+                
+                .home_content{
+                    .home_logo{
+                        margin-bottom: 180px;
+                        img{
+                            width: 180px;
+                        }
+                    }
+                    .af{
+                        span{
+                            width: 530px;
+                            height: 530px;
+                        }
+                    }
+                    .home_txt {
+                        h2{
+                            
+                            margin-bottom: 30px;
+                        }
+                        .home_btn{
+                            gap: 15px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                } 
+            }
+        } 
+        /* about */
+        #about {
+            .about_1 {
+                .about_text{
+                    .intro1_wrap {
+                        h4{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .about_2 {
+                .about_de {
+                    .about_img{
+                        
+                        .d-pc{
+                            display: none;
+                        }
+                        .d-m{
+                            display: block;max-width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+                    .de_text {
+                        ul{
+                            flex-direction: column;
+                            li{
+                                height: 240px;
+                                width: 370px;
+                                margin: 0 auto;
+                                &:nth-of-type(1){
+                                    border-radius: 50px 50px 0 0;
+                                }
+                                &:nth-of-type(2){
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                }
+                                &:nth-of-type(3){
+                                    border-radius: 0 0 50px 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about_3 {
+                .about_de {
+                    img{
+                        max-width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+/* 모바일2 576px */
+@include mobile2{
+    main {
+        #home {
+            .home_wrap {
+                .home_content {
+                    .home_logo{
+                        margin-bottom: 60px;
+                    }
+                    .home_txt {
+                        p{
+                            
+                        }
+                    }
+                    .home_txt {
+                        .home_btn{
+                            //margin-bottom: 45px;
+                        }
+                    }
+                }
+            }
+        }
+        #about {
+            .about_1 {
+                .about_text {
+                    span{
+                        width: 31%;
+                    }
+                    .intro1_wrap{
+                        margin-top: 65px;
+                        h4{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .about_2 {
+                .about_text {
+                    h3{
+                        width: 80%;
+                    }
+                    span{
+                        width: 57%;
+                    }
+                }
+            }
+            .about_3 {
+                .about_text {
+                    .boxabout{
+                        width: 74%;
+                    }
+                    .de_text{
+                        width: 65%;
+                        line-height: 1.5;
+                    }
+                    span{
+                        width: 68%;
+                    }
+                }
+            }
+        }
+        #coin {
+            article {
+                .coin_img {
+                    .on1{
+                        left: 42%;
+                    }
+                }
+                .coin_box {
+                    img{
+                        max-width: 80%;
+                    }
+                    p{
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                    }
+                }
+            }
+            .bg_meve {
+               display: none;
+            }
+        }
+
+        #roadmap {
+            height: 150vh;
+            .road_de{
+                flex-direction: column;
+                gap: 25px;
+                margin-bottom: 25px;
+                .road_box_left{
+                    img{
+                        max-width: 70%;
+                    }
+                    div{
+                        top: 2rem;
+                        left: 6rem;
+                        h3{
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        ul{width: 80%;
+                            line-height: 1.7;
+                            li{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+                .road_box_right{
+                    img{
+                        max-width: 70%;
+                    }
+                    div{
+                        top: 2rem;
+                        left: 6rem;
+                        h3{
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        ul{
+                            width: 80%;
+                            line-height: 1.7;
+                            li{
+                                font-size: 1rem;
+                            }
+                        }
+                        }
+                }
+            }
+            }
+            #contact {
+                .cont_in {
+                    .form_box{
+                        max-width: 100%;
+                    }
+                }
+                .bg_meve{
+                    display: none;
+                }
+            }
+        }
+
+    footer{
+            max-width: 80%;
+            margin: 0 auto;
+            .footer_area{
+                flex-direction: column;
+                .inc{
+                    width: 100%;
+                }
+                .white_pp{
+                    width: 100%;
+                    text-align: left;
+                    .but-box{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+            p{
+                line-height: 1.5;
+            }
+        }
+}
+/* 모바일3 갤석시 425px */
+@include galaxy{
+    main {
+        #home {
+            .home_wrap {
+                .home_content {
+                    .home_logo{
+                        margin-bottom: 100px;
+                    }
+                    .home_txt {
+                        h1{
+                            font-size: 2.2rem;
+                        }
+                        h2{
+                            white-space:normal ;
+                        }
+                        p{
+                            white-space: normal;
+                        }
+                    }
+                    .af {
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        #about {
+            .about_1 {
+                .about_text{
+                    margin-left: 3.5rem;
+                    .boxabout{
+                        margin-top: 20px;
+                    }
+                    span{
+                        width: 40%;
+                    }
+                    .intro1_wrap{
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .about_2 {
+                .about_text{
+                    margin-left: 3.5rem;
+                    span{
+                        width: 77%;
+                    }
+                }
+                .about_de {
+                    .de_text {
+                        ul {
+                            li{
+                                width: 287px;
+                                padding: 0;
+                                p{padding: 0 15px;}
+                                img{
+                                    width: 80px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about_3 {
+                .about_text{
+                    margin-left: 3.5rem;
+                    span{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #coin{
+            article {
+                .coin_text {
+                    padding-top: 8.5rem;
+                    h3{
+                        width: 68%;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                }
+                .coin_img {
+                    .on1{
+                        width: 70px;
+                        left: 40%;
+                    }
+                    .on2{
+                        width: 130px;
+                    }
+                }
+            }
+        }
+        #roadmap {
+            height: 150vh;
+            .road_de{
+                flex-direction: column;
+                gap: 25px;
+                margin-bottom: 25px;
+                .road_box_left{
+                    img{
+                        max-width: 90%;
+                    }
+                    div{
+                        top: 2rem;
+                        left: 2.5rem;
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        ul{
+                            line-height: 1.1;
+                            li{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                .road_box_right{
+                    img{
+                        max-width: 90%;
+                    }
+                    div{
+                        top: 2rem;
+                        left: 2.5rem;
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        ul{
+                            padding: 0;
+                            line-height: 1.1;
+                            width: 100%;
+                            li{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            .cont_in {
+                .form_box{
+                    max-width: 85%;
+                }
+            }
+        }
+    }
+
+}
+/* 모바일4 아이폰 375px */
+@include iphone{
+    header {
+        .hd_all {
+            .m_menu {
+                .menu_style{
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+    main {
+        #about {
+            .about_1 {
+                .about_text{
+                    margin-left: 2.5rem;
+                    span{
+                        width: 46%;
+                    }
+                    .intro1_wrap {
+                        h4{line-height: 1.6;}
+                    }
+                }
+            }
+            .about_2 {
+                .about_text{
+                    margin-left: 2.5rem;
+                    span{
+                        width: 84%;
+                    }
+                    h3{
+                        width: 73%;
+                    }
+                }
+                .about_de {
+                    .de_text {
+                        ul {
+                            li{
+                                width: 253px;
+                            }
+                        }
+                    }
+                }
+            }
+            .about_3{
+                .about_text{
+                    margin-left: 2.5rem;
+                    span{
+                        width: 73.5%;
+                    }
+                    .boxabout{
+
+                    }
+                    .de_text{
+                        width: 80%;
+                        text-align: center;
+                    }
+                }
+
+            } 
+        }
+        #coin {
+            article {
+                .coin_box {
+                    p{
+                        line-height: 1.7;
+                    }
+                }
+            }
+        }
+        #roadmap {
+            .road_de {
+                .road_box_left {
+                    div {
+                        left: 2.2rem;
+                        h3{
+                            
+                        }
+                        ul{
+                            width: 100%;
+                            line-height: 1.1;
+                        }
+                    }
+                }
+                .road_box_right {
+                    div {
+                        left: 2.2rem;
+                        h3{
+                            
+                        }
+                        ul{
+                            width: 100%;
+                            line-height: 1.1;
+                            li{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
